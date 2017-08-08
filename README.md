@@ -11,14 +11,14 @@ To activate Google Cloud Shell, from the developer console simply click the butt
 
 Once connected to the cloud shell, you should see that you are already authenticated and that the project is already set to your PROJECT_ID :
 
-    `$ gcloud auth list`
+    $ gcloud auth list
  
-    `Credentialed accounts:`
+    Credentialed accounts:
   
-    `- <myaccount>@<mydomain>.com (active)`
+    - <myaccount>@<mydomain>.com (active)
     
   
-  `$ gcloud config list project`
+   `$ gcloud config list project`
   
   ` [core]`
   
@@ -26,12 +26,12 @@ Once connected to the cloud shell, you should see that you are already authentic
   
 #### Step 3. Get the Spring Boot Example source code
 
-    `$ git clone git@github.com:somyagarg94/gcp-demo.git`
-    `$ cd gcp-demo`
+    $ git clone git@github.com:somyagarg94/gcp-demo.git
+    $ cd gcp-demo
     
 #### Step 4. Run the Application locally
 
-     `$ ./mvnw spring-boot:run`
+     $ ./mvnw spring-boot:run
  
 Once the application started, click on the Web Preview icon in the Cloud Shell toolbar and choose preview on port 8099.
 
@@ -39,9 +39,9 @@ Once the application started, click on the Web Preview icon in the Cloud Shell t
 
    First, initialize the Project to be able to run App Engine applications. We'll initialize the project to run in the US Central region:
     
-        `$ gcloud app create --region us-central`
+        $ gcloud app create --region us-central
   
    Then, deploy your application into App Engine environment, run `mvn appengine:deploy`:
    
-        `$ ./mvnw -DskipTests appengine:deploy` 
+        $ ./mvnw -DskipTests appengine:deploy
 After the application is deployed, you can visit it by opening the URL http://<project-id>.appspot.com in your web browser
